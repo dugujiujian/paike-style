@@ -1,0 +1,8 @@
+// see https://github.com/chimurai/http-proxy-middleware#context-matching
+// see https://github.com/angular/angular-cli/wiki/stories-proxy
+
+{
+  "/api": {
+    "target": "http://localhost:8099"
+  }
+}

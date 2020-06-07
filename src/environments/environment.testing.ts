@@ -1,5 +1,6 @@
 export const environment = {
-  production: true,
+  production: false,
+  ENV_TYPE: 'testing',
   enableTracing: true,
   useHash: false
 };

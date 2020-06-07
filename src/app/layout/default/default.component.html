@@ -14,14 +14,14 @@
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
       <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
         <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/dashboard">工作台</a>
+          <li nz-menu-item >
+            <a routerLink="/dashboard/workspace">工作台</a>
           </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/controller_pannel">控制台</a>
+          <li nz-menu-item >
+            <a routerLink="/dashboard/console">控制台</a>
           </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/anylise">分析页</a>
+          <li nz-menu-item>
+            <a routerLink="/dashboard/welcome">分析页</a>
           </li>
         </ul>
       </li>
@@ -46,10 +46,10 @@
       </div>
     </nz-header>
     <nz-content>
-      <nz-breadcrumb>
-        <nz-breadcrumb-item>User</nz-breadcrumb-item>
-        <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
-      </nz-breadcrumb>
+      <!--<nz-breadcrumb>-->
+        <!--<nz-breadcrumb-item>User</nz-breadcrumb-item>-->
+        <!--<nz-breadcrumb-item>Bill</nz-breadcrumb-item>-->
+      <!--</nz-breadcrumb>-->
       <div class="inner-content">
         <router-outlet></router-outlet>
       </div>

@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  enableTracing: true,
+  useHash: false
 };
 
 /*
@@ -14,3 +16,24 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/**
+ * 环境
+ */
+export enum ENV_TYPE {
+  /**
+   * 日常
+   */
+  testing = 'testing',
+
+  /**
+   * 预发
+   */
+  staging = 'staging',
+
+  /**
+   * 生产
+   */
+  production = 'production',
+}
